@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190D728F1DC1F0DE006A3988 /* BTVChangeAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D728E1DC1F0DE006A3988 /* BTVChangeAvailability.swift */; };
+		190D72961DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D72941DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.swift */; };
+		190D72971DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190D72951DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.xib */; };
 		5E4BD1021DC1E66400846607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4BD1011DC1E66400846607 /* AppDelegate.swift */; };
 		5E4BD1041DC1E66400846607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4BD1031DC1E66400846607 /* ViewController.swift */; };
 		5E4BD1071DC1E66400846607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4BD1051DC1E66400846607 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190D728E1DC1F0DE006A3988 /* BTVChangeAvailability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTVChangeAvailability.swift; sourceTree = "<group>"; };
+		190D72941DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTVChangeAvailabilityTableViewCell.swift; sourceTree = "<group>"; };
+		190D72951DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTVChangeAvailabilityTableViewCell.xib; sourceTree = "<group>"; };
 		5E4BD0FE1DC1E66400846607 /* BTV-Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTV-Coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4BD1011DC1E66400846607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E4BD1031DC1E66400846607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190D728B1DC1EB3A006A3988 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				190D728E1DC1F0DE006A3988 /* BTVChangeAvailability.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		190D728C1DC1EB3C006A3988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				190D72941DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.swift */,
+				190D72951DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		190D728D1DC1EB3F006A3988 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		5E4BD0F51DC1E66400846607 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +86,9 @@
 		5E4BD1001DC1E66400846607 /* BTV-Coach */ = {
 			isa = PBXGroup;
 			children = (
+				190D728D1DC1EB3F006A3988 /* Model */,
+				190D728C1DC1EB3C006A3988 /* View */,
+				190D728B1DC1EB3A006A3988 /* Controller */,
 				5E4BD1011DC1E66400846607 /* AppDelegate.swift */,
 				5E4BD1031DC1E66400846607 /* ViewController.swift */,
 				5E4BD1051DC1E66400846607 /* Main.storyboard */,
@@ -130,6 +163,7 @@
 				5E4BD10F1DC1E66400846607 /* LaunchScreen.storyboard in Resources */,
 				5E4BD10C1DC1E66400846607 /* Assets.xcassets in Resources */,
 				5E4BD1071DC1E66400846607 /* Main.storyboard in Resources */,
+				190D72971DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190D72961DC1F18F006A3988 /* BTVChangeAvailabilityTableViewCell.swift in Sources */,
 				5E4BD1041DC1E66400846607 /* ViewController.swift in Sources */,
 				5E4BD10A1DC1E66400846607 /* BTV_Coach.xcdatamodeld in Sources */,
 				5E4BD1021DC1E66400846607 /* AppDelegate.swift in Sources */,
+				190D728F1DC1F0DE006A3988 /* BTVChangeAvailability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +340,7 @@
 				5E4BD1151DC1E66400846607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
