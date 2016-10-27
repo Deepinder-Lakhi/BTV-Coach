@@ -13,6 +13,11 @@
 		5E4BD10A1DC1E66400846607 /* BTV_Coach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E4BD1081DC1E66400846607 /* BTV_Coach.xcdatamodeld */; };
 		5E4BD10C1DC1E66400846607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4BD10B1DC1E66400846607 /* Assets.xcassets */; };
 		5E4BD10F1DC1E66400846607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4BD10D1DC1E66400846607 /* LaunchScreen.storyboard */; };
+		80AD63751DC1E97500FA857E /* BTVCoachDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD63741DC1E97500FA857E /* BTVCoachDashboardVC.swift */; };
+		80AD63781DC1EA9700FA857E /* CoachDashboardHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD63761DC1EA9700FA857E /* CoachDashboardHeaderCell.swift */; };
+		80AD63791DC1EA9700FA857E /* CoachDashboardHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AD63771DC1EA9700FA857E /* CoachDashboardHeaderCell.xib */; };
+		80AD637E1DC1F42600FA857E /* CoachScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD637C1DC1F42600FA857E /* CoachScheduleCell.swift */; };
+		80AD637F1DC1F42600FA857E /* CoachScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AD637D1DC1F42600FA857E /* CoachScheduleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		5E4BD10B1DC1E66400846607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E4BD10E1DC1E66400846607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E4BD1101DC1E66400846607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80AD63741DC1E97500FA857E /* BTVCoachDashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTVCoachDashboardVC.swift; sourceTree = "<group>"; };
+		80AD63761DC1EA9700FA857E /* CoachDashboardHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachDashboardHeaderCell.swift; sourceTree = "<group>"; };
+		80AD63771DC1EA9700FA857E /* CoachDashboardHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoachDashboardHeaderCell.xib; sourceTree = "<group>"; };
+		80AD637C1DC1F42600FA857E /* CoachScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachScheduleCell.swift; sourceTree = "<group>"; };
+		80AD637D1DC1F42600FA857E /* CoachScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoachScheduleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			children = (
 				5E4BD1011DC1E66400846607 /* AppDelegate.swift */,
 				5E4BD1031DC1E66400846607 /* ViewController.swift */,
+				80AD637B1DC1F3AE00FA857E /* Controllers */,
+				80AD637A1DC1F3A500FA857E /* View */,
 				5E4BD1051DC1E66400846607 /* Main.storyboard */,
 				5E4BD10B1DC1E66400846607 /* Assets.xcassets */,
 				5E4BD10D1DC1E66400846607 /* LaunchScreen.storyboard */,
@@ -65,6 +77,25 @@
 				5E4BD1081DC1E66400846607 /* BTV_Coach.xcdatamodeld */,
 			);
 			path = "BTV-Coach";
+			sourceTree = "<group>";
+		};
+		80AD637A1DC1F3A500FA857E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80AD63761DC1EA9700FA857E /* CoachDashboardHeaderCell.swift */,
+				80AD63771DC1EA9700FA857E /* CoachDashboardHeaderCell.xib */,
+				80AD637C1DC1F42600FA857E /* CoachScheduleCell.swift */,
+				80AD637D1DC1F42600FA857E /* CoachScheduleCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80AD637B1DC1F3AE00FA857E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80AD63741DC1E97500FA857E /* BTVCoachDashboardVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AD63791DC1EA9700FA857E /* CoachDashboardHeaderCell.xib in Resources */,
 				5E4BD10F1DC1E66400846607 /* LaunchScreen.storyboard in Resources */,
 				5E4BD10C1DC1E66400846607 /* Assets.xcassets in Resources */,
 				5E4BD1071DC1E66400846607 /* Main.storyboard in Resources */,
+				80AD637F1DC1F42600FA857E /* CoachScheduleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E4BD1041DC1E66400846607 /* ViewController.swift in Sources */,
+				80AD63781DC1EA9700FA857E /* CoachDashboardHeaderCell.swift in Sources */,
 				5E4BD10A1DC1E66400846607 /* BTV_Coach.xcdatamodeld in Sources */,
 				5E4BD1021DC1E66400846607 /* AppDelegate.swift in Sources */,
+				80AD63751DC1E97500FA857E /* BTVCoachDashboardVC.swift in Sources */,
+				80AD637E1DC1F42600FA857E /* CoachScheduleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +340,7 @@
 				5E4BD1151DC1E66400846607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

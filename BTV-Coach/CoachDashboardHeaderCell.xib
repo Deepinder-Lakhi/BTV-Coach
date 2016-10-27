@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="CoachDashboardHeaderCell" customModule="BTV_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Schedule Today" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxU-br-qaD">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="33"/>
+                        <color key="textColor" red="0.48421639204025269" green="0.31087377667427063" blue="0.48449039459228516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vng-mP-c9a">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.37794137001037598" green="0.006198798306286335" blue="0.36853185296058655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-rn-cIc">
+                        <color key="backgroundColor" red="0.82180190086364746" green="0.72205162048339844" blue="0.8154415488243103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="jfj-KB-HtO"/>
+                            <constraint firstAttribute="height" constant="1" id="w5H-aw-qe0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vng-mP-c9a" firstAttribute="top" secondItem="uxU-br-qaD" secondAttribute="bottom" constant="7" id="8C8-2K-eow"/>
+                    <constraint firstItem="uxU-br-qaD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="DKQ-bE-aRJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uxU-br-qaD" secondAttribute="trailing" constant="61" id="JUi-cF-W7c"/>
+                    <constraint firstItem="bDX-rn-cIc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NBZ-Cv-jhx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vng-mP-c9a" secondAttribute="trailing" constant="196" id="Tei-U1-w1B"/>
+                    <constraint firstItem="Vng-mP-c9a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="hKZ-ZO-Eth"/>
+                    <constraint firstItem="bDX-rn-cIc" firstAttribute="top" secondItem="Vng-mP-c9a" secondAttribute="bottom" constant="12" id="nZJ-V3-2o7"/>
+                    <constraint firstItem="uxU-br-qaD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="pUJ-7O-kjE"/>
+                    <constraint firstAttribute="bottom" secondItem="bDX-rn-cIc" secondAttribute="bottom" constant="18" id="rIZ-cq-9DF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-172.5" y="-82"/>
+        </tableViewCell>
+    </objects>
+</document>
